@@ -1,7 +1,7 @@
 function love.conf(t)
     io.stdout:setvbuf("no")
     t.identity = nil                   -- The name of the save directory (string)
-    t.version = "0.9.2"                -- The LÖVE version this game was made for (string)
+    t.version = "0.10.0"                -- The LÖVE version this game was made for (string)
     --t.console = true                -- Attach a console (boolean, Windows only)
     
     t.window.title = "Untitled"        -- The window title (string)
