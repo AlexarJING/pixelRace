@@ -1,0 +1,1438 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"std_",
+				"std_item"
+			],
+			[
+				"player",
+				"player"
+			],
+			[
+				"tab",
+				"table.insert	(table, [pos,] value)"
+			],
+			[
+				"print",
+				"love.graphics.print"
+			],
+			[
+				"for",
+				"fori	for i,v in ipairs()"
+			],
+			[
+				"dra",
+				"draw()	cell"
+			],
+			[
+				"key",
+				"love.keyboard.isDown"
+			],
+			[
+				"ope",
+				"love.system.openURL"
+			],
+			[
+				"os",
+				"os.execute	([command])"
+			],
+			[
+				"copy",
+				"copyto"
+			],
+			[
+				"newRight",
+				"newRightButton"
+			],
+			[
+				"leftselect",
+				"leftSelectPosY"
+			],
+			[
+				"leftTop",
+				"leftTopX"
+			],
+			[
+				"partsp",
+				"partsPosLeft"
+			],
+			[
+				"get",
+				"love.mouse.getPosition"
+			],
+			[
+				"mousei",
+				"love.mouse.isDown"
+			],
+			[
+				"draw",
+				"love.graphics.draw"
+			],
+			[
+				"max",
+				"math.max	(x, ...)"
+			],
+			[
+				"flag",
+				"flagLast"
+			],
+			[
+				"rand",
+				"love.math.random"
+			],
+			[
+				"scre",
+				"love.graphics.newScreenshot"
+			],
+			[
+				"dr",
+				"love.graphics.draw"
+			],
+			[
+				"canvas",
+				"love.graphics.newCanvas"
+			],
+			[
+				"isdon",
+				"love.mouse.isDown"
+			],
+			[
+				"poly",
+				"love.graphics.polygon"
+			],
+			[
+				"table",
+				"table.insert	(table, [pos,] value)"
+			],
+			[
+				"getLocal",
+				"getLocalVelocity"
+			],
+			[
+				"ply",
+				"love.graphics.polygon"
+			],
+			[
+				"rando",
+				"love.math.random"
+			],
+			[
+				"sha",
+				"love.physics.newPolygonShape"
+			],
+			[
+				"inmd",
+				"love.image.newImageData"
+			],
+			[
+				"fon",
+				"love.graphics.newFont"
+			],
+			[
+				"carm",
+				"camera"
+			],
+			[
+				"isdo",
+				"love.keyboard.isDown"
+			],
+			[
+				"event",
+				"love.event.quit"
+			],
+			[
+				"camer",
+				"camera"
+			],
+			[
+				"shape",
+				"love.physics.newCircleShape"
+			],
+			[
+				"random",
+				"love.math.setRandomSeed"
+			],
+			[
+				"mat",
+				"math.random	([m [, n]])"
+			],
+			[
+				"up",
+				"unpack	(list [, i [, j]])"
+			],
+			[
+				"road",
+				"road_body"
+			],
+			[
+				"joint",
+				"love.physics.newRevoluteJoint"
+			],
+			[
+				"join",
+				"love.physics.newWeldJoint"
+			],
+			[
+				"camera",
+				"camera_mini"
+			],
+			[
+				"setP",
+				"love.audio.setPosition"
+			],
+			[
+				"newch",
+				"love.physics.newChainShape"
+			],
+			[
+				"upa",
+				"unpack	(list [, i [, j]])"
+			],
+			[
+				"lien",
+				"love.graphics.line"
+			],
+			[
+				"neww",
+				"love.physics.newWeldJoint"
+			],
+			[
+				"math",
+				"math.rad	(x)"
+			],
+			[
+				"newre",
+				"love.physics.newRevoluteJoint"
+			],
+			[
+				"curretn",
+				"currentNormal"
+			],
+			[
+				"setLinear",
+				"setlinearVelocity"
+			],
+			[
+				"polyg",
+				"love.graphics.polygon"
+			],
+			[
+				"geto",
+				"love.audio.getPosition"
+			],
+			[
+				"circl",
+				"love.graphics.circle"
+			],
+			[
+				"getc",
+				"love.graphics.getColor"
+			],
+			[
+				"pol",
+				"love.graphics.polygon"
+			],
+			[
+				"newshape",
+				"love.physics.newRectangleShape"
+			],
+			[
+				"circ",
+				"love.graphics.circle"
+			],
+			[
+				"newim",
+				"love.graphics.newImage"
+			],
+			[
+				"setline",
+				"love.graphics.setLineWidth"
+			],
+			[
+				"isd",
+				"love.mouse.isDown"
+			],
+			[
+				"love",
+				"love.keypressed(key, isrepeat)	love.keypressed-key-isrepeat"
+			],
+			[
+				"file",
+				"love.filesystem.load"
+			],
+			[
+				"new",
+				"love.graphics.newImageFont"
+			],
+			[
+				"ta",
+				"table.remove	(table [, pos])"
+			],
+			[
+				"ke",
+				"love.keyboard.isDown"
+			],
+			[
+				"highL",
+				"highLightSlot"
+			],
+			[
+				"line",
+				"love.graphics.line"
+			],
+			[
+				"cardino",
+				"cardinfo"
+			],
+			[
+				"roll",
+				"roll_agl"
+			],
+			[
+				"setf",
+				"love.graphics.setFont"
+			],
+			[
+				"newf",
+				"love.graphics.newFont"
+			],
+			[
+				"SETC",
+				"love.graphics.setColor"
+			],
+			[
+				"string",
+				"string.find	(s, pattern [, init [, plain]])"
+			],
+			[
+				"callba",
+				"callback_arg"
+			],
+			[
+				"cir",
+				"love.graphics.circle"
+			],
+			[
+				"client_",
+				"client_port"
+			],
+			[
+				"getr",
+				"love.math.getRandomState"
+			],
+			[
+				"setr",
+				"love.math.setRandomState"
+			],
+			[
+				"seed",
+				"love.math.setRandomSeed"
+			],
+			[
+				"search",
+				"searchForCreate"
+			],
+			[
+				"check",
+				"checkSkull"
+			],
+			[
+				"rad",
+				"love.math.setRandomSeed"
+			],
+			[
+				"we",
+				"while	while cond"
+			],
+			[
+				"setcl",
+				"love.graphics.setColor"
+			],
+			[
+				"gr",
+				"love.graphics.rectangle"
+			],
+			[
+				"drawf",
+				"drawFromOpDeck"
+			],
+			[
+				"selfk",
+				"selfkill10"
+			],
+			[
+				"onAtta",
+				"onAttack"
+			],
+			[
+				"attack",
+				"attackweak"
+			],
+			[
+				"alway",
+				"cardsAlways_update"
+			],
+			[
+				"cost_",
+				"cost_lvl0"
+			],
+			[
+				"inter",
+				"interceptTab"
+			],
+			[
+				"minion",
+				"minionTab"
+			],
+			[
+				"abilit",
+				"abilities"
+			],
+			[
+				"upperT",
+				"upperTurnOver"
+			],
+			[
+				"mouse",
+				"love.mouse.getPosition"
+			],
+			[
+				"refill",
+				"refillCard"
+			],
+			[
+				"rado",
+				"love.math.random"
+			],
+			[
+				"push",
+				"love.graphics.push"
+			],
+			[
+				"getpo",
+				"love.mouse.getPosition"
+			],
+			[
+				"setc",
+				"love.graphics.setColor"
+			],
+			[
+				"set",
+				"love.graphics.setFont"
+			],
+			[
+				"can",
+				"love.graphics.newCanvas"
+			],
+			[
+				"pic_",
+				"pic_front"
+			],
+			[
+				"ve",
+				"vec4"
+			],
+			[
+				"vec",
+				"vec2"
+			],
+			[
+				"rect",
+				"love.graphics.rectangle"
+			],
+			[
+				"v",
+				"vec4"
+			],
+			[
+				"setsh",
+				"love.graphics.setShader"
+			],
+			[
+				"shad",
+				"love.graphics.newShader"
+			],
+			[
+				"to",
+				"tostring	(e)"
+			],
+			[
+				"setb",
+				"love.graphics.setBackgroundColor"
+			],
+			[
+				"font",
+				"love.graphics.newFont"
+			],
+			[
+				"pri",
+				"love.graphics.print"
+			],
+			[
+				"func",
+				"function	function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "scenes/data.lua",
+			"settings":
+			{
+				"buffer_size": 2044,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "render.lua",
+			"settings":
+			{
+				"buffer_size": 6088,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "rules.lua",
+			"settings":
+			{
+				"buffer_size": 12731,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scenes/help.lua",
+			"settings":
+			{
+				"buffer_size": 1406,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "objs/car.lua",
+			"settings":
+			{
+				"buffer_size": 12385,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scenes/rapid.lua",
+			"settings":
+			{
+				"buffer_size": 1976,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scenes/game.lua",
+			"settings":
+			{
+				"buffer_size": 1166,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scenes/menu.lua",
+			"settings":
+			{
+				"buffer_size": 1290,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scenes/config.lua",
+			"settings":
+			{
+				"buffer_size": 1074,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scenes/garage.lua",
+			"settings":
+			{
+				"buffer_size": 14332,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Lua Love/LuaLove.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Add Channel"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Build: Run"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 504.0
+	},
+	"console":
+	{
+		"height": 140.0,
+		"history":
+		[
+			"Love2D",
+			"love2d",
+			"build",
+			"Build",
+			"Love2D",
+			"Love2d",
+			"love2d",
+			"build"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/F/Love2D Project/pixelRace",
+		"/F/Love2D Project/pixelRace/scenes"
+	],
+	"file_history":
+	[
+		"/F/Love2D Project/pixelRace/playerData.lua",
+		"/F/Love2D Project/pixelRace/render.lua",
+		"/F/Love2D Project/pixelRace/scenes/rapid.lua",
+		"/F/Love2D Project/pixelRace/libs/util.lua",
+		"/F/Love2D Project/pixelRace/scenes/help.lua",
+		"/F/Love2D Project/pixelRace/scenes/credits.lua",
+		"/F/Love2D Project/pixelRace/scenes/inter.lua",
+		"/F/Love2D Project/pixelRace/scenes/start.lua",
+		"/F/Love2D Project/pixelRace/main.lua",
+		"/F/Love2D Project/pixelRace/scenes/game.lua",
+		"/F/Love3d/love3d/assets/models/skydome.iqe",
+		"/F/Love2D Project/pixelRace/rules.lua",
+		"/F/Love2D Project/pixelRace/objs/item.lua",
+		"/F/Love2D Project/pixelRace/objs/car.lua",
+		"/F/Love2D Project/pixelRace/gameCtrl.lua",
+		"/F/Love2D Project/pixelRace/objs/tires.lua",
+		"/F/Love2D Project/pixelRace/scenes/intro.lua",
+		"/F/Love2D Project/pixelRace/scenes/data.lua",
+		"/F/Love2D Project/pixelRace/scenes/quit.lua",
+		"/F/Love2D Project/pixelRace/scenes/config.lua",
+		"/F/Love2D Project/pixelRace/scenes/garage.lua",
+		"/C/Users/Administrator/Desktop/程序/Love Libs/love-webplayer-master/love-webplayer-master/README",
+		"/C/Users/Administrator/Desktop/程序/Love Libs/love-webplayer-master/love-webplayer-master/index.html",
+		"/F/Love2D Project/pixelRace/scenes/results.lua",
+		"/F/Love2D Project/pixelRace/scenes/career.lua",
+		"/F/Love2D Project/pixelRace/libs/colorPicker.lua",
+		"/F/Love2D Project/pixelRace/libs/loveframes/skins/transparent/skin.lua",
+		"/F/Love2D Project/pixelRace/libs/bintable.lua",
+		"/F/Love2D Project/pixelRace/libs/loveframes/libraries/utf8.lua",
+		"/F/Love2D Project/pixelRace/libs/libs/loveframes/libraries/utf8.lua",
+		"/C/Users/Administrator/Desktop/colorPicker.lua",
+		"/F/Love2D Project/pixelRace/colorPicker.lua",
+		"/C/Users/Administrator/Desktop/main.lua",
+		"/F/Love2D Project/pixelRace/scenes/menu.lua",
+		"/F/Love2D Project/pixelRace/contact.lua",
+		"/F/Love2D Project/pixelRace/objs/road.lua",
+		"/F/Love2D Project/pixelRace/camera.lua",
+		"/F/Love2D Project/pixelRace/objs/flag.lua",
+		"/F/Love2D Project/pixelRace/update.lua",
+		"/F/Love2D Project/pixelRace/objs/disk.lua",
+		"/F/Love2D Project/pixelRace/objs/trace.lua",
+		"/F/Love2D Project/pixelRace/ai.lua",
+		"/F/Love2D Project/pixelRace/objs/road_point.lua",
+		"/F/Love2D Project/pixelRace/objs/lightWall.lua",
+		"/F/Love2D Project/pixelRace/libs/tween.lua",
+		"/F/Love2D Project/pixelRace/scenes/scenes/career.lua",
+		"/F/Love2D Project/pixelRace/game.lua",
+		"/F/Love2D Project/pixelRace/start.lua",
+		"/F/Love2D Project/pixelRace/lcd.ttf",
+		"/F/Love2D Project/pixelRace/libs/loveframes/init.lua",
+		"/F/Love2D Project/pixelRace/objs/explode.lua",
+		"/F/Love2D Project/pixelRace/explode.lua",
+		"/F/Love2D Project/pixelRace/objs/spark.lua",
+		"/F/Love2D Project/pixelRace/objs/puff.lua",
+		"/F/Love2D Project/pixelRace/item.lua",
+		"/F/Love2D Project/pixelRace/conf.lua",
+		"/F/Love2D Project/pixelRace/objs/road4.lua",
+		"/F/Love2D Project/pixelRace/objs/ai.lua",
+		"/F/Love2D Project/pixelRace/objs/road3.lua",
+		"/F/Love2D Project/pixelRace/objs/road_points.lua",
+		"/F/Love2D Project/pixelRace/objs/point.lua",
+		"/F/Love2D Project/pixelRace/objs/road2.lua",
+		"/F/Love2D Project/pixelRace/objs/ground.lua",
+		"/C/Users/Administrator/Desktop/iforce2d_TopdownCar.h",
+		"/F/Love2D Project/pixelRace/objs/cars.lua",
+		"/C/Users/Administrator/Desktop/程序/示例/light_worldv2.1/examples/vendor/hump/vector.lua",
+		"/F/Love2D Project/pixelRace/libs/shakycam.lua",
+		"/F/Love2D Project/pixelRace/objs/walls.lua",
+		"/F/Love2D Project/bump.lua-demo/lib/help.lua",
+		"/F/Love2D Project/battlefield/main.lua",
+		"/F/Love2D Project/battlefield/main - 副本.lua",
+		"/F/Love2D Project/battlefield/util/utils.lua",
+		"/F/Love2D Project/battlefield/heros.lua",
+		"/F/Love2D Project/battlefield/STI/map.lua",
+		"/F/Love2D Project/battlefield/chinese.ttf",
+		"/F/Love2D Project/battlefield/middleclass.lua",
+		"/C/Users/Administrator/Desktop/Orthogonal/main.lua",
+		"/C/Users/ADMINI~1/AppData/Local/Temp/Rar$DRa0.705/README.md",
+		"/F/Love2D Project/battlefield/jumper/help.txt",
+		"/F/Love2D Project/battlefield/astar/jumper.lua",
+		"/C/Users/Administrator/Desktop/demo/README.md",
+		"/C/Users/Administrator/Desktop/Orthogonal/STI/README.md",
+		"/F/Love2D Project/castlevania/main.lua",
+		"/F/Love2D Project/castlevania/lib/vrld-HardonCollider-79c3d0a/README",
+		"/F/Love2D Project/castlevania/lib/AnAL.lua",
+		"/F/Love2D Project/castlevania/conf.lua",
+		"/F/Love2D Project/castlevania/input.lua",
+		"/C/Users/Administrator/Desktop/工具箱0.2.3版本/Resource/hero.plist",
+		"/F/Love2D Project/castlevania/visual.lua",
+		"/F/Love2D Project/castlevania/lib/anim8.lua",
+		"/C/Users/Administrator/Desktop/注册.rgs",
+		"/C/Users/Administrator/Desktop/MapEditor/Data/地图/藏书库/书库房间02.map",
+		"/C/Users/ADMINI~1/AppData/Local/Temp/Rar$DRa0.653/levels/test1.lua",
+		"/C/Users/ADMINI~1/AppData/Local/Temp/Rar$DRa0.522/main.lua",
+		"/F/Love2D Project/ice&fire_3x3/lib/tween.lua",
+		"/F/Love2D Project/loveFrameVisualEditor/libraries/loveframes/readme.md",
+		"/F/Love2D Project/ice&fire_3x3/start.lua",
+		"/F/Love2D Project/ice&fire_3x3/card.lua",
+		"/F/Love2D Project/ice&fire_3x3/lib/loveframes/skins/transparent/skin.lua",
+		"/F/Love2D Project/ice&fire_3x3/conf.lua",
+		"/C/Users/Administrator/Desktop/程序/love-0.9.1/src/scripts/boot.lua.h",
+		"/F/Love2D Project/ice&fire_3x3/loadTexture.lua",
+		"/F/game/Astral Masters/Images/cards/wrathofnature.TGA",
+		"/C/Users/Administrator/Desktop/planarburst.TGA",
+		"/C/Users/Administrator/Desktop/WillOfAncients.TGA",
+		"/F/Love2D Project/ice&fire_3x3/main.lua",
+		"/F/game/Astral Masters/Images/Chat/duel.tga",
+		"/F/Love2D Project/ice&fire_3x3/game.lua",
+		"/F/Love2D Project/a love2d game/lib/hump-master/README.md",
+		"/C/Users/Administrator/Desktop/plasmabolt.TGA",
+		"/F/game/Astral Masters/Images/cards/plasmabolt.TGA",
+		"/F/game/Astral Masters/Images/cards/planarburst.TGA",
+		"/F/game/Astral Masters/Images/cards/creatglow.jpg",
+		"/C/Users/Administrator/Desktop/1.png",
+		"/F/game/Astral Masters/Images/Chat/selbtn.tga",
+		"/C/Users/Administrator/Desktop/tag",
+		"/F/game/Astral Masters/Images/cards/AcidicDrake.JPG",
+		"/C/Users/ADMINI~1/AppData/Local/Temp/Rar$DRa0.056/README.md",
+		"/C/Users/ADMINI~1/AppData/Local/Temp/Rar$DRa0.031/main.lua",
+		"/F/Love2D Project/war of omens/tween/tween.lua",
+		"/F/Love2D Project/module/lib/tween/README.md",
+		"/D/Program Files/Sublime Text 3/Data/Packages/User/Function Name Display.sublime-settings",
+		"/D/Program Files/Sublime Text 3/Data/Packages/Function Name Display/Function Name Display.sublime-settings",
+		"/F/Love2D Project/war of omens/deckEditor.lua",
+		"/F/Love2D Project/war of omens/upper.lua",
+		"/F/Love2D Project/war of omens/lower.lua",
+		"/F/Love2D Project/war of omens/loadCards.lua",
+		"/F/Love2D Project/war of omens/frame_basic.lua"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"power",
+			"print",
+			"flag",
+			"key",
+			"lapcheck",
+			"round",
+			"score",
+			"time",
+			"game.time",
+			"time",
+			"draw",
+			"print",
+			"set",
+			"newDown",
+			"print",
+			"input",
+			"frame",
+			"bordercolor",
+			"frame",
+			"print",
+			"partsDat",
+			"ui",
+			"pos=",
+			"circle",
+			"polygon",
+			"require ",
+			"flag",
+			"get",
+			"dual",
+			"drift",
+			"last",
+			"print",
+			"self.las",
+			"self.last",
+			"getLast",
+			"pursue",
+			"math.getFirstCar()",
+			"target",
+			"rnd_item",
+			"std",
+			"item",
+			"std_item",
+			",road",
+			" road.",
+			"gamebutton",
+			"print",
+			"onclick",
+			"Gamestate",
+			"255,255,255",
+			"255,255,255,200",
+			"outlinedRect",
+			"button",
+			"bodycolor",
+			"button",
+			"pan",
+			"pann",
+			"pannel",
+			"lua",
+			"shield",
+			"posinROad",
+			"disk",
+			"item",
+			"exo",
+			"print",
+			"shell.",
+			"reset",
+			"self.body",
+			"addw",
+			"print",
+			"group",
+			"puff",
+			"indexe",
+			"index",
+			"polygon",
+			"trace",
+			"puff",
+			"trace",
+			"active",
+			"reset",
+			"road.count",
+			"wall",
+			"lua",
+			"type",
+			"dist",
+			"trace",
+			"forwar",
+			"trace",
+			"powerup",
+			"reset",
+			"puff",
+			"key",
+			"reset",
+			"key",
+			"isd",
+			"torquep",
+			"kills",
+			"maxLImp",
+			"maxDriveForce",
+			"maxFSpeed",
+			"friction",
+			"print",
+			"256",
+			"wrong",
+			"addtor",
+			"mask",
+			"setcat",
+			"npc",
+			"nps",
+			"puff",
+			"print",
+			"front",
+			"60000",
+			"30",
+			"aictrl",
+			"trace",
+			"group",
+			"parent",
+			"isfront",
+			"turn",
+			"setpo",
+			"group",
+			"trace",
+			"puff",
+			"l.angle",
+			"print",
+			"angle",
+			"local ",
+			"uy"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"left",
+			"type=",
+			"flag",
+			"dual",
+			"accelerate",
+			"self:getLast",
+			"drift",
+			"getTarget(obj)",
+			"pursue",
+			"rnd",
+			"std_speed",
+			"gamestate",
+			"shell[].",
+			"spark",
+			"back",
+			"3000",
+			"50",
+			"",
+			"50",
+			"",
+			"ky",
+			"kx",
+			"self.last",
+			"setAngle",
+			"Polygon",
+			"right",
+			"left",
+			"fixture",
+			"setRestitution",
+			"right",
+			"left2",
+			"p",
+			"right",
+			"*4",
+			"*8",
+			"self.",
+			"keyboard.",
+			"self.",
+			"frame",
+			"slots",
+			"isHover",
+			"down",
+			"60",
+			"needConfirm",
+			"cmd",
+			"info",
+			"deckEditor.",
+			"",
+			"	{1,\"",
+			"{\"1\",\"",
+			"delay.",
+			"card.belongTo",
+			"default",
+			"me",
+			"onDiscard",
+			"op",
+			"\"onTurnOver\",a.heroDraw",
+			"me.hero",
+			"me",
+			"record",
+			"frame.ab.actionMove",
+			"ab.actionMove",
+			"me",
+			"weakest.hp=100",
+			".",
+			"cards[i]",
+			"unpack(v[i])",
+			"make",
+			"\"状态\"",
+			"a.heroDraw",
+			"frame.heroDraw",
+			"where",
+			"card.belongTo",
+			"card",
+			"",
+			"frame",
+			"lower",
+			"card:",
+			".",
+			".you",
+			":attack",
+			"onSlaught",
+			"green",
+			"upper",
+			"",
+			"绿",
+			"\"green\"",
+			"green",
+			"upper",
+			"绿",
+			"nil",
+			"",
+			"hero",
+			"hand",
+			"field",
+			"deck",
+			"bank",
+			"cards",
+			"upper.",
+			"deck",
+			"hero",
+			"hand",
+			"field",
+			"bank",
+			"lower.",
+			"upper",
+			"lower",
+			"upper"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "scenes/data.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1136,
+								1136
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_encoding": "UTF-8",
+							"function_name_status_row": 40,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 379.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "render.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6088,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5471,
+								5471
+							]
+						],
+						"settings":
+						{
+							"function_name_status_row": 151,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2460.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "rules.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								508,
+								508
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_encoding": "UTF-8",
+							"function_name_status_row": 19,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "scenes/help.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1406,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								298,
+								298
+							]
+						],
+						"settings":
+						{
+							"function_name_status_row": 11,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "objs/car.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12385,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								362,
+								362
+							]
+						],
+						"settings":
+						{
+							"function_name_status_row": 9,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "scenes/rapid.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1976,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1331,
+								1331
+							]
+						],
+						"settings":
+						{
+							"function_name_status_row": 54,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 741.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "scenes/game.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								248
+							]
+						],
+						"settings":
+						{
+							"function_name_status_row": 12,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "scenes/menu.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1290,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								944,
+								944
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_encoding": "UTF-8",
+							"function_name_status_row": 50,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 627.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "scenes/config.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								528,
+								528
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_encoding": "UTF-8",
+							"function_name_status_row": 26,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "scenes/garage.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13812,
+								13770
+							]
+						],
+						"settings":
+						{
+							"function_name_status_row": 565,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Lua Love/LuaLove.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10362.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Lua Love/LuaLove.sublime-build",
+	"project": "racer.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 170.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
