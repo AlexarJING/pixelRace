@@ -12,6 +12,9 @@
 local path = string.sub(..., 1, string.len(...) - string.len(".objects.text"))
 local loveframes = require(path .. ".libraries.common")
 
+-- use the utf8 library
+local utf8 = require(path .. ".libraries.utf8")
+
 -- text object
 local newobject = loveframes.NewObject("text", "loveframes_object_text", true)
 
@@ -20,7 +23,7 @@ local newobject = loveframes.NewObject("text", "loveframes_object_text", true)
 	- desc: initializes the object
 --]]---------------------------------------------------------
 function newobject:initialize()
-	
+
 	self.type = "text"
 	self.text = ""
 	self.font = loveframes.basicfont
@@ -43,12 +46,12 @@ function newobject:initialize()
 	self.linksenabled = false
 	self.detectlinks = false
 	self.OnClickLink = nil
-	
+
 	local skin = loveframes.util.GetActiveSkin()
 	if not skin then
 		skin = loveframes.config["DEFAULTSKIN"]
 	end
-	
+
 	local directives = skin.directives
 	if directives then
 		local text_default_color = directives.text_default_color
@@ -64,7 +67,7 @@ function newobject:initialize()
 			self.font = text_default_font
 		end
 	end
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -75,30 +78,30 @@ function newobject:update(dt)
 
 	local state = loveframes.state
 	local selfstate = self.state
-	
+
 	if state ~= selfstate then
 		return
 	end
-	
+
 	local visible = self.visible
 	local alwaysupdate = self.alwaysupdate
-	
+
 	if not visible then
 		if not alwaysupdate then
 			return
 		end
 	end
-	
+
 	local parent = self.parent
 	local base = loveframes.base
 	local update = self.Update
-	
+
 	self:CheckHover()
-	
+
 	local hover = self.hover
 	local linksenabled = self.linksenabled
 	local linkcol = false
-	
+
 	if hover and linksenabled and not loveframes.resizeobject then
 		local formattedtext = self.formattedtext
 		local x = self.x
@@ -123,17 +126,17 @@ function newobject:update(dt)
 		end
 		self.linkcol = linkcol
 	end
-	
+
 	-- move to parent if there is a parent
 	if parent ~= base then
 		self.x = self.parent.x + self.staticx
 		self.y = self.parent.y + self.staticy
 	end
-	
+
 	if update then
 		update(self, dt)
 	end
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -144,15 +147,15 @@ function newobject:draw()
 
 	local state = loveframes.state
 	local selfstate = self.state
-	
+
 	if state ~= selfstate then
 		return
 	end
-	
+
 	if not self.visible then
 		return
 	end
-	
+
 	local skins = loveframes.skins.available
 	local skinindex = loveframes.config["ACTIVESKIN"]
 	local defaultskin = loveframes.config["DEFAULTSKIN"]
@@ -161,10 +164,10 @@ function newobject:draw()
 	local drawfunc = skin.DrawText or skins[defaultskin].DrawText
 	local draw = self.Draw
 	local drawcount = loveframes.drawcount
-	
+
 	-- set the object's draw order
 	self:SetDrawOrder()
-		
+
 	if draw then
 		draw(self)
 	else
@@ -172,7 +175,7 @@ function newobject:draw()
 	end
 
 	self:DrawText()
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -183,19 +186,19 @@ function newobject:mousepressed(x, y, button)
 
 	local state = loveframes.state
 	local selfstate = self.state
-	
+
 	if state ~= selfstate then
 		return
 	end
-	
+
 	local visible = self.visible
-	
+
 	if not visible then
 		return
 	end
-	
+
 	local hover = self.hover
-	if hover and button == "l" then
+	if hover and button == 1 then
 		local baseparent = self:GetBaseParent()
 		if baseparent and baseparent.type == "frame" then
 			baseparent:MakeTop()
@@ -225,7 +228,7 @@ function newobject:mousepressed(x, y, button)
 			end
 		end
 	end
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -233,7 +236,7 @@ end
 	- desc: sets the object's text
 --]]---------------------------------------------------------
 function newobject:SetText(t)
-	
+
 	local dtype = type(t)
 	local maxw = self.maxw
 	local font = self.font
@@ -245,10 +248,10 @@ function newobject:SetText(t)
 	local prevfont = font
 	local link = false
 	local tdata
-	
+
 	self.text = ""
 	self.formattedtext = {}
-	
+
 	if dtype == "string" then
 		tdata = {t}
 		self.original = {t}
@@ -261,7 +264,7 @@ function newobject:SetText(t)
 	else
 		return
 	end
-	
+
 	for k, v in ipairs(tdata) do
 		dtype = type(v)
 		if dtype == "table" then
@@ -284,33 +287,33 @@ function newobject:SetText(t)
 			end
 		elseif dtype == "number" then
 			table.insert(self.formattedtext, {
-				font = prevfont, 
-				color = prevcolor, 
-				linkcolor = prevlinkcolor, 
-				linkhovercolor = prevlinkhovercolor, 
-				link = link, 
+				font = prevfont,
+				color = prevcolor,
+				linkcolor = prevlinkcolor,
+				linkhovercolor = prevlinkhovercolor,
+				link = link,
 				text = tostring(v)
 			})
 		elseif dtype == "string" then
 			if self.ignorenewlines then
-				v = v:gsub("\n", " ")
+				v = utf8.gsub(v, "\n", " ")
 			end
-			v = v:gsub(string.char(9), "    ")
-			v = v:gsub("\n", " \n ")
+			v = utf8.gsub(v, string.char(9), "    ")
+			v = utf8.gsub(v, "\n", " \n ")
 			local parts = loveframes.util.SplitString(v, " ")
 			for i, j in ipairs(parts) do
 				table.insert(self.formattedtext, {
-					font = prevfont, 
-					color = prevcolor, 
-					linkcolor = prevlinkcolor, 
-					linkhovercolor = prevlinkhovercolor, 
-					link = link, 
+					font = prevfont,
+					color = prevcolor,
+					linkcolor = prevlinkcolor,
+					linkhovercolor = prevlinkhovercolor,
+					link = link,
 					text = j
 				})
 			end
 		end
 	end
-	
+
 	if maxw > 0 then
 		for k, v in ipairs(self.formattedtext) do
 			local data = v.text
@@ -320,18 +323,18 @@ function newobject:SetText(t)
 			local key = k
 			if width > maxw then
 				table.remove(self.formattedtext, k)
-				for n=1, string.len(data) do	
-					local item = data:sub(n, n)
+				for n=1, utf8.len(data) do
+					local item = utf8.sub(data, n, n)
 					local itemw = v.font:getWidth(item)
-					if n ~= string.len(data) then
+					if n ~= utf8.len(data) then
 						if (curw + itemw) > maxw then
 							table.insert(inserts, {
-								key = key, 
-								font = v.font, 
-								color = v.color, 
-								linkcolor = prevlinkcolor, 
-								linkhovercolor = v.linkhovercolor, 
-								link = v.link, 
+								key = key,
+								font = v.font,
+								color = v.color,
+								linkcolor = prevlinkcolor,
+								linkhovercolor = v.linkhovercolor,
+								link = v.link,
 								text = new
 							})
 							new = item
@@ -344,12 +347,12 @@ function newobject:SetText(t)
 					else
 						new = new .. item
 						table.insert(inserts, {
-							key = key, 
-							font = v.font, 
-							color = v.color, 
-							linkcolor = prevlinkcolor, 
-							linkhovercolor = v.linkhovercolor, 
-							link = v.link, 
+							key = key,
+							font = v.font,
+							color = v.color,
+							linkcolor = prevlinkcolor,
+							linkhovercolor = v.linkhovercolor,
+							link = v.link,
 							text = new
 						})
 					end
@@ -357,18 +360,18 @@ function newobject:SetText(t)
 			end
 		end
 	end
-	
+
 	for k, v in ipairs(inserts) do
 		table.insert(self.formattedtext, v.key, {
-			font = v.font, 
-			color = v.color, 
-			linkcolor = prevlinkcolor, 
-			linkhovercolor = v.linkhovercolor, 
-			link = v.link, 
+			font = v.font,
+			color = v.color,
+			linkcolor = prevlinkcolor,
+			linkhovercolor = v.linkhovercolor,
+			link = v.link,
 			text = v.text
 		})
 	end
-	
+
 	local textdata = self.formattedtext
 	local maxw = self.maxw
 	local font = self.font
@@ -388,12 +391,12 @@ function newobject:SetText(t)
 	local largestheight = 0
 	local initialwidth = 0
 	local detectlinks = self.detectlinks
-	
+
 	for k, v in ipairs(textdata) do
 		local text = v.text
 		local color = v.color
 		if detectlinks then
-			if string.len(text) > 7 and (text:sub(1, 7) == "http://" or text:sub(1, 8) == "https://") then
+			if utf8.len(text) > 7 and (utf8.sub(text, 1, 7) == "http://" or utf8.sub(text, 1, 8) == "https://") then
 				v.link = true
 			end
 		end
@@ -408,7 +411,7 @@ function newobject:SetText(t)
 			totalwidth = totalwidth + width
 			if maxw > 0 then
 				if k ~= 1 then
-					if string.byte(text) == 10 then
+					if utf8.byte(text) == 10 then
 						twidth = 0
 						drawx = 0
 						width = 0
@@ -434,7 +437,7 @@ function newobject:SetText(t)
 				v.x = drawx
 				v.y = drawy
 			else
-				if string.byte(text) == 10 then
+				if utf8.byte(text) == 10 then
 					twidth = 0
 					drawx = 0
 					width = 0
@@ -460,26 +463,26 @@ function newobject:SetText(t)
 			end
 		end
 	end
-	
+
 	self.lines = lines
-	
+
 	if lastwidth == 0 then
 		textwidth = totalwidth
 	end
-	
+
 	if textwidth < largestwidth then
 		textwidth = largestwidth
 	end
-	
+
 	if maxw > 0 then
 		self.width = maxw
 	else
 		self.width = textwidth
 	end
-	
+
 	self.height = drawy + prevlargestheight
 	return self
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -489,7 +492,7 @@ end
 function newobject:GetText()
 
 	return self.text
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -499,7 +502,7 @@ end
 function newobject:GetFormattedText()
 
 	return self.formattedtext
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -516,7 +519,7 @@ function newobject:DrawText()
 	local shadowyoffset = self.shadowyoffset
 	local shadowcolor = self.shadowcolor
 	local inlist, list = self:IsInList()
-	
+
 	for k, v in ipairs(textdata) do
 		local textx = v.x
 		local texty = v.y
@@ -569,9 +572,9 @@ function newobject:DrawText()
 			love.graphics.print(text, x + textx, y + texty)
 		end
 	end
-	
+
 	return self
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -581,12 +584,12 @@ end
 function newobject:SetMaxWidth(width)
 
 	local original = self.original
-	
+
 	self.maxw = width
 	self:SetText(original)
-	
+
 	return self
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -596,7 +599,7 @@ end
 function newobject:GetMaxWidth()
 
 	return self.maxw
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -610,9 +613,9 @@ function newobject:SetWidth(width, relative)
 	else
 		self:SetMaxWidth(width)
 	end
-	
+
 	return self
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -620,9 +623,9 @@ end
 	- desc: sets the object's height
 --]]---------------------------------------------------------
 function newobject:SetHeight(height)
-	
+
 	return
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -636,9 +639,9 @@ function newobject:SetSize(width, height, relative)
 	else
 		self:SetMaxWidth(width)
 	end
-	
+
 	return self
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -649,15 +652,15 @@ end
 function newobject:SetFont(font)
 
 	local original = self.original
-	
+
 	self.font = font
-	
+
 	if original then
 		self:SetText(original)
 	end
-	
+
 	return self
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -667,7 +670,7 @@ end
 function newobject:GetFont()
 
 	return self.font
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -677,7 +680,7 @@ end
 function newobject:GetLines()
 
 	return self.lines
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -688,7 +691,7 @@ function newobject:SetIgnoreNewlines(bool)
 
 	self.ignorenewlines = bool
 	return self
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -698,7 +701,7 @@ end
 function newobject:GetIgnoreNewlines()
 
 	return self.ignorenewlines
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -710,7 +713,7 @@ function newobject:SetShadow(bool)
 
 	self.shadow = bool
 	return self
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -721,7 +724,7 @@ end
 function newobject:GetShadow()
 
 	return self.shadow
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -732,9 +735,9 @@ function newobject:SetShadowOffsets(offsetx, offsety)
 
 	self.shadowxoffset = offsetx
 	self.shadowyoffset = offsety
-	
+
 	return self
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -744,7 +747,7 @@ end
 function newobject:GetShadowOffsets()
 
 	return self.shadowxoffset, self.shadowyoffset
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -752,10 +755,10 @@ end
 	- desc: sets the object's shadow color
 --]]---------------------------------------------------------
 function newobject:SetShadowColor(r, g, b, a)
-	
+
 	self.shadowcolor = {r, g, b, a}
 	return self
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -763,9 +766,9 @@ end
 	- desc: gets the object's shadow color
 --]]---------------------------------------------------------
 function newobject:GetShadowColor()
-	
+
 	return self.shadowcolor
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -776,7 +779,7 @@ function newobject:SetDefaultColor(r, g, b, a)
 
 	self.defaultcolor = {r, g, b, a}
 	return self
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -787,7 +790,7 @@ end
 function newobject:GetDefaultColor()
 
 	return self.defaultcolor
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -799,7 +802,7 @@ function newobject:SetLinksEnabled(enabled)
 
 	self.linksenabled = enabled
 	return self
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -810,7 +813,7 @@ end
 function newobject:GetLinksEnabled()
 
 	return self.linksenabled
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -822,7 +825,7 @@ function newobject:SetDetectLinks(detect)
 
 	self.detectlinks = detect
 	return self
-	
+
 end
 
 --[[---------------------------------------------------------
@@ -833,5 +836,5 @@ end
 function newobject:GetDetectLinks()
 
 	return self.detectlinks
-	
+
 end
